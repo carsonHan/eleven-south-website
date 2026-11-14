@@ -51,6 +51,11 @@ function render() {
 
 function openEnquiry(unit = '') { document.querySelector('#unit').value = unit || ''; document.querySelector('#enquiry').showModal(); track('enquiry_opened', { unit: String(unit || 'development') }); }
 render();
+document.querySelector('.menu')?.addEventListener('click', (event) => {
+  const links = document.querySelector('.nav-links');
+  links.classList.toggle('open');
+  event.currentTarget.textContent = links.classList.contains('open') ? 'Close' : 'Menu';
+});
 document.addEventListener('click', (event) => { const open = event.target.closest('.open-enquiry'); if (open) openEnquiry(open.dataset.unit); const link = event.target.closest('.listing'); if (link) listing(link.dataset.unit, link.dataset.provider); });
 document.querySelector('#enquiry-form').addEventListener('submit', (event) => { event.preventDefault(); const form = new FormData(event.currentTarget); if (!form.get('consent')) return; track('enquiry_config_pending', { unit: form.get('unit') || 'development' }); document.querySelector('#form-status').hidden = false; });
 document.querySelector('#close-dialog').addEventListener('click', () => document.querySelector('#enquiry').close());
