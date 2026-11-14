@@ -1,0 +1,10 @@
+{
+  "name": "eleven-south",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check src/app.js && node --check scripts/build.mjs",
+    "dev": "npx serve dist"
+  }
+}
