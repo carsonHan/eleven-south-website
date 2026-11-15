@@ -8,3 +8,4 @@
 @media(max-width:700px){.hero{padding:0 20px 20px}.hero nav{margin:0 -20px;padding:20px}}
 .hero nav{align-items:center}
 @media(min-width:701px){.hero nav .wordmark{transform:none}}
+.residence-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.residence-image.has-photo:after{background:linear-gradient(180deg,rgba(0,0,0,.18),transparent 52%,rgba(0,0,0,.28))}

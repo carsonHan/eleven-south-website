@@ -26,7 +26,7 @@ function listing(unit, provider) {
 function unitCard(unit) {
   const u = units[unit];
   return `<article class="residence ${unit === 2 || unit === 4 ? 'priority' : ''}">
-    <div class="residence-image image-placeholder image-${unit}"><span>Image placeholder · completed development photography</span><b>Unit ${unit}</b></div>
+    <div class="residence-image image-placeholder image-${unit}${unit === 2 ? ' has-photo' : ''}">${unit === 2 ? '<img src="/unit-2.jpg" alt="Unit 2 open-plan kitchen and dining area">' : '<span>Image placeholder · completed development photography</span>'}<b>Unit ${unit}</b></div>
     <div class="residence-copy"><p class="eyebrow">${u.priority}</p><h3>Residence ${unit}</h3><p>${u.beds} · ${u.bath}<br>${u.parking}</p><a href="/unit-${unit}/" class="text-link" data-unit="${unit}">Explore residence <span>→</span></a></div>
   </article>`;
 }
