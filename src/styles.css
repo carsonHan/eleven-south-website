@@ -13,3 +13,4 @@
 .residences .section-heading>.eyebrow{display:inline-block;margin:0 0 20px;font:12px/1 var(--mono);letter-spacing:.16em}
 .hero .button.light{background:transparent;color:#fff;border-color:#fff;border-radius:8px}
 @media(max-width:700px){.hero .hero-link{display:none}}
+.residence-copy .text-link{display:inline-flex;align-items:center;min-height:44px;padding:10px 15px;border:1px solid #27312e;border-radius:8px;color:#27312e}
