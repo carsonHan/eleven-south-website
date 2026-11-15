@@ -14,3 +14,4 @@
 .hero .button.light{background:transparent;color:#fff;border-color:#fff;border-radius:8px}
 @media(max-width:700px){.hero .hero-link{display:none}}
 .residence-copy .text-link{display:inline-flex;align-items:center;min-height:44px;padding:10px 15px;border:1px solid #27312e;border-radius:8px;color:#27312e}
+.story-video-panel{display:flex;align-items:center;justify-content:center;padding:28px;background:#d7d4c9}.story-video{display:block;width:min(100%,640px);height:auto;aspect-ratio:16/9;object-fit:contain;background:#151a18;box-shadow:0 16px 35px rgba(20,24,21,.18)}@media(max-width:700px){.story-video-panel{padding:20px}.story-video{width:100%;max-width:560px}}
