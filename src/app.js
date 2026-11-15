@@ -26,7 +26,7 @@ function listing(unit, provider) {
 function unitCard(unit) {
   const u = units[unit];
   const photoAlt = { 2: 'Unit 2 open-plan kitchen and dining area', 4: 'Unit 4 exterior', 5: 'Unit 5 living and dining area', 6: 'Unit 6 kitchen, dining and living area' }[unit];
-  const cardDetails = { 2: '3 Bedrooms · 2 Bathrooms + Separate Toilet · Family Room<br>Dedicated Laundry Cabinet · Large Balcony · Garage for Parking', 4: '3 Bedrooms · Bathroom + Separate Toilet<br>Dedicated car park · Laundry Cabinet · Pantry Storage · Basement Storage' }[unit] || `${u.beds} · ${u.bath}<br>${u.parking}`;
+  const cardDetails = { 2: '3 Bedrooms · 2 Bathrooms + Separate Toilet · Family Room<br>Dedicated Laundry Cabinet · Large Balcony · Garage for Parking', 4: '3 Bedrooms · Bathroom + Separate Toilet<br>Dedicated car park · Laundry Cabinet · Pantry Storage · Basement Storage', 5: '2 Bedrooms + Study · Bathroom + Separate Toilet<br>Dedicated car park · Laundry Cabinet · Pantry Storage · Basement Storage' }[unit] || `${u.beds} · ${u.bath}<br>${u.parking}`;
   return `<article class="residence ${unit === 2 || unit === 4 ? 'priority' : ''}">
     <div class="residence-image image-placeholder image-${unit}${photoAlt ? ' has-photo' : ''}">${photoAlt ? `<img src="/unit-${unit}.jpg" alt="${photoAlt}">` : '<span>Image placeholder · completed development photography</span>'}<b>Unit ${unit}</b></div>
     <div class="residence-copy"><p class="eyebrow">${u.priority}</p><h3>Residence ${unit}</h3><p>${cardDetails}</p><a href="/unit-${unit}/" class="text-link" data-unit="${unit}">Explore residence <span>→</span></a></div>
