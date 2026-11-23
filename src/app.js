@@ -38,7 +38,7 @@ function specIcon(type) {
     bath: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 14h18v2a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-2ZM6 14V9a3 3 0 0 1 3-3h1M4 20v1M20 20v1"/></svg>',
     car: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 11 2-5h10l2 5M3 11h18v7H3zM7 18a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM17 18a1 1 0 1 0 0-2 1 1 0 1 0 0 2Z"/></svg>',
     ruler: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 16 12-12 4 4-12 12-4-4ZM12 8l4 4M9 11l2 2M6 14l2 2"/></svg>',
-    toilet: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="6" height="10" rx="1"/><path d="M9 8h10v4c0 4-2 6-6 6h-2c-2 0-3-1-3-3v-2"/><path d="M11 18v3h7v-3"/><path d="M5 6h2"/></svg>'
+    toilet: '<svg class="toilet-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="2.5" width="7" height="10" rx="1.3"/><path d="M10 10.5H20V13.5C20 17.2 17.3 19 13.5 19H11C8.8 19 7.5 17.3 7.5 15V12.5"/><path d="M11 19V21.5H19V19"/><path d="M4.8 5.3H7.2"/><path d="M10 12.2H20"/></svg>'
   };
   return icons[type];
 }
