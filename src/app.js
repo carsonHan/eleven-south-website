@@ -53,7 +53,7 @@ function unitCard(unit) {
 }
 
 function mobileActions(unit = 'development') {
-  if (unit === 'development') return `<aside class="mobile-action-bar single" aria-label="Quick actions"><a href="#residences">Explore available homes <span>→</span></a></aside>`;
+  if (unit === 'development') return `<aside class="mobile-action-bar home-actions" aria-label="Quick actions"><a href="#residences">Explore homes <span aria-hidden="true">→</span></a><a href="#enquire">Make a booking <span aria-hidden="true">↗</span></a></aside>`;
   const listingLabel = unit === 'development' ? 'View on Trade Me' : 'Development listing';
   return `<aside class="mobile-action-bar" aria-label="Quick actions"><button class="mobile-listing listing" data-unit="${unit}" data-provider="tradeMe">${listingLabel}</button><button class="mobile-viewing open-enquiry" data-unit="${unit === 'development' ? '' : unit}">Arrange viewing</button></aside>`;
 }
